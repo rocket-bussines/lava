@@ -1,0 +1,41 @@
+<header>
+    <div class="container">
+        <div class="header">
+            <div class="header__left">
+                <a href="/" class="header__logo">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#lava"></use>
+                    </svg>
+                </a>
+                <ul class="header__menu">
+                    <!-- заглушки вместо ссылок -->
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#">Фильмы</a></li>
+                    <li><a href="#">Сериалы</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                @@include("../language-swither/language-swither.html")
+                <a href="#" class="btn btn_orange">Месяц за 0 ₽</a>
+                <a href="#">Войти</a>
+            </div>
+            <div id="close">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#close"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="header__mobile">
+        <div class="header__hamb">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#hamb"></use>
+            </svg>
+        </div>
+        <a href="/" class="header__mobile__logo">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#lava"></use>
+            </svg>
+        </a>
+    </div>
+</header>

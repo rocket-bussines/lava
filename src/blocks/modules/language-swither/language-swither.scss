@@ -1,0 +1,45 @@
+#language-swither {
+    display: flex;
+    li {
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #393A48;
+        background: #171823;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s all;
+        &[data-active] {
+            opacity: 1;
+            margin-left: 10px;
+            @media (max-width: 1050px) {
+                border-color: $orange;
+                a {
+                    color: $orange;
+                }
+            }
+        }
+        &:hover {
+            border-color: $orange;
+            a {
+                color: $orange;
+            }
+            @media (max-width: 1050px) {
+                border-color: #393A48;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        @media (max-width: 1050px) {
+            opacity: 1;
+        }
+    }
+    @media (max-width: 1050px) {
+        order: 2;
+        margin-top: 30px;
+    }
+}
