@@ -1,0 +1,26 @@
+.simple-lang {
+    .simple__item a {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: #242537;
+        border-radius: 10px;
+        height: 282px;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: -34px;
+            right: -32px;
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+        }
+        .subtitle {
+            margin: 23px;
+        }
+        @media (max-width: 1050px) {
+            height: unset;
+        }
+    }
+}

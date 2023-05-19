@@ -1,8 +1,15 @@
+header {
+    @media (max-width: 1050px) {
+        height: 50px;
+    }
+}
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 84px;
     transition: 0.2s all;
+    z-index: 200;
     &__left,
     &__right {
         height: 100%;
@@ -69,14 +76,17 @@
     &__mobile {
         display: none;
         @media (max-width: 1050px) {
+            position: fixed;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 15px;
             height: 50px;
+            width: 100%;
             background: #000;
             transition: 0.2s all;
             transform: translateY(0);
+            z-index: 200;
         }
     }
     @media (max-width: 1050px) {

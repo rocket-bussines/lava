@@ -48,15 +48,33 @@ svg {
     font-weight: 600;
     font-size: 30px;
     line-height: 36px;
+    @media (max-width: 1050px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 .subtitle {
     font-size: 24px;
     line-height: 29px;
+    @media (max-width: 1050px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 .small-text {
     font-size: 15px;
     line-height: 18px;
+    @media (max-width: 1050px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 .grey-text {
     color: $grey;
+}
+.bold {
+    font-weight: 600;
+}
+.m0 {
+    margin: 0;
 }

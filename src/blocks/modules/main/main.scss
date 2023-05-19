@@ -1,14 +1,31 @@
 .main {
+    padding-top: 10px;
     &__wrapper {
         overflow: hidden;
         display: flex;
         height: 635px;
+        @media (max-width: 1050px) {
+            flex-direction: column;
+            height: unset;
+        }
     }
     &__video-block {
         position: relative;
         width: 100%;
         height: 100%;
         transition: 0.3s all linear;
+        @media (max-width: 1050px) {
+            height: 500px;
+        }
+        @media (max-width: 850px) {
+            height: 400px;
+        }
+        @media (max-width: 700px) {
+            height: 300px;
+        }
+        @media (max-width: 500px) {
+            height: 200px;
+        }
         .full {
             width: 100%;
             height: 100%;
@@ -37,6 +54,9 @@
                     height: 15px;
                 }
             }
+            @media (max-width: 1050px) {
+                display: none;
+            }
         }
         &.active {
             .main__video-block-more {
@@ -63,10 +83,18 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #090C23  90%);;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #141623  90%);
+            @media (max-width: 1050px) {
+               content: none;
+            }
         }
         @media (max-width: 1500px) {
             margin-left: 40px;
+        }
+        @media (max-width: 1050px) {
+            max-width: unset;
+            margin-top: 20px;
+            margin-left: 0;
         }
     }
     &__descr {
@@ -74,6 +102,10 @@
         max-width: calc(100% - 564px);
         .btn {
             margin-top: 14px;
+        }
+        @media (max-width: 1500px) {
+            padding: 20px 0;
+            max-width: unset
         }
     }
     

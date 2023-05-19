@@ -1,0 +1,19 @@
+.simple-types {
+    .simple__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #242537;
+        border-radius: 10px;
+        height: 282px;
+        img {
+            width: 100%;
+        }
+        .subtitle {
+            margin: 23px;
+        }
+        @media (max-width: 1050px) {
+            height: unset;
+        }
+    }
+}
